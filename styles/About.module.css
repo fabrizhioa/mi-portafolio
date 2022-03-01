@@ -50,3 +50,12 @@
 	font-weight: bold;
 	grid-column: 1/-1;
 }
+
+@media (max-width: 800px) {
+	.resume {
+		grid-template-columns: auto;
+	}
+	.resume p {
+		font-size: 0.8rem;
+	}
+}

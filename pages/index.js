@@ -123,7 +123,7 @@ export default function Home() {
 						</li>
 					</ul>
 					<div style={{ display: "block" }}>
-						<Link href="#">
+						<Link href="/about">
 							<a
 								style={{
 									display: "inline-block",
