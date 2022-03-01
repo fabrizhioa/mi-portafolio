@@ -11,8 +11,18 @@ export default function About(props) {
 			<div className={styles.container}>
 				<section className={styles.resume}>
 					<Header title="Sobre mi" />
+
 					<div className={styles.gridFullSpace}>
 						<h1>Informacion personal</h1>
+					</div>
+					<div>
+						<Image
+							src="/assets/perfilImage.png"
+							width={350}
+							height={350}
+							alt="Profile Image"
+							className={styles.perfilImage}
+						/>
 					</div>
 					<div className={styles.contentBox}>
 						<h3 style={{ textAlign: "center" }}>FABRIZHIO D. AL CHARITI B.</h3>
@@ -46,15 +56,6 @@ export default function About(props) {
 							Si quieres conocer mas respecto a mi trabajo ve a la seccion de{" "}
 							<Link href="/galery">Galeria</Link>.
 						</p>
-					</div>
-					<div>
-						<Image
-							src="/assets/perfilImage.png"
-							width={350}
-							height={350}
-							alt="Profile Image"
-							className={styles.perfilImage}
-						/>
 					</div>
 				</section>
 				<section className={styles.tecnologyBox}>
