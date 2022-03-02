@@ -5,18 +5,11 @@ import Image from "next/image";
 export default function galery(props) {
 	return (
 		<>
-			<div className={styles.container}>
-				<Header title="Galeria" />
-				<section className={styles.sectionGalery}>
-					<Link href="./web">
-						<a
-							className={styles.sectionFullColumnGrid}
-							style={{
-								backgroundColor: "antiquewhite",
-								padding: ".3rem",
-								textAlign: "center",
-							}}
-						>
+			<div className="contenedor">
+				<section className={styles.section}>
+					<Header title="Galeria" />
+					<Link href="/galery/web">
+						<a className={styles.btnWebGalery}>
 							<Image
 								src="/assets/imagesGalery/imageGalery1.svg"
 								alt="image"
@@ -27,14 +20,8 @@ export default function galery(props) {
 						</a>
 					</Link>
 
-					<Link href="./desktop">
-						<a
-							style={{
-								backgroundColor: "olivedrab",
-								padding: ".3rem",
-								textAlign: "center",
-							}}
-						>
+					<Link href="/galery/mobile">
+						<a className={styles.btnMobileGalery}>
 							<Image
 								src="/assets/imagesGalery/imageGalery2.svg"
 								alt="image"
@@ -45,14 +32,8 @@ export default function galery(props) {
 						</a>
 					</Link>
 
-					<Link href="./mobile">
-						<a
-							style={{
-								backgroundColor: "skyblue",
-								padding: ".3rem",
-								textAlign: "center",
-							}}
-						>
+					<Link href="/galery/desktop">
+						<a className={styles.btnDesktopGalery}>
 							<Image
 								src="/assets/imagesGalery/imageGalery3.svg"
 								alt="image"

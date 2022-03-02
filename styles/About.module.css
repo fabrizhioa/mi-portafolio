@@ -1,61 +1,39 @@
-.container {
-	background-color: orangered;
-	height: 100%;
-	width: 100%;
-	color: white;
+.section,
+.section2 {
+	display: grid;
+	text-align: center;
+	align-self: center;
+	padding: 1rem;
+	min-height: 100%;
+	height: max-content;
 }
 
-.gridFullSpace {
+.section {
+	background-color: orangered;
+	color: white;
+	grid-template-rows: max-content auto auto;
+}
+
+.section2 {
+	grid-template-columns: auto auto auto;
+	color: orangered;
+}
+
+.section2Title {
+	grid-column: 1/-1;
+}
+.gridFullColumn {
 	grid-column: 1/-1;
 }
 
-.resume {
-	height: 100%;
-	text-align: center;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: max-content auto;
-	align-self: center;
-	justify-content: center;
-	padding: 1rem;
-}
-
-.resume div {
-	width: 100%;
-	height: 100%;
-}
-
-.container section div > p {
-	margin: 2px;
-}
-
-.contentBox {
+.contentBox p {
+	margin: 0 auto;
 	text-align: justify;
 }
 
-.perfilImage {
-	border: 1px solid white;
-}
-
-.tecnologyBox {
-	text-align: center;
-	height: 100%;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	align-self: center;
-}
-
-.tecnologyBoxTitle {
-	color: orangered;
-	font-weight: bold;
-	grid-column: 1/-1;
-}
-
-@media (max-width: 800px) {
-	.resume {
-		grid-template-columns: auto;
-	}
-	.resume p {
-		font-size: 0.8rem;
+@media (min-width: 600px) {
+	.section {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: max-content auto;
 	}
 }

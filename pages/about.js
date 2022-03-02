@@ -8,18 +8,17 @@ const technologyImageHeight = 100;
 export default function About(props) {
 	return (
 		<>
-			<div className={styles.container}>
-				<section className={styles.resume}>
+			<div className="contenedor">
+				<section className={styles.section}>
 					<Header title="Sobre mi" />
-
-					<div className={styles.gridFullSpace}>
+					<div className={styles.gridFullColumn}>
 						<h1>Informacion personal</h1>
 					</div>
 					<div>
 						<Image
 							src="/assets/perfilImage.png"
-							width={350}
-							height={350}
+							width={250}
+							height={250}
 							alt="Profile Image"
 							className={styles.perfilImage}
 						/>
@@ -58,38 +57,11 @@ export default function About(props) {
 						</p>
 					</div>
 				</section>
-				<section className={styles.tecnologyBox}>
-					<h1 className={styles.tecnologyBoxTitle}>Tecnologias conocidas</h1>
+				<section className={styles.section2}>
+					<h1 className={styles.section2Title}>Tecnologias conocidas</h1>
 					<div>
 						<Image
 							src="/assets/logosAbout/javascriptLogo.svg"
-							width={technologyImageWidth}
-							height={technologyImageHeight}
-							alt="Profile Image"
-							className={styles.perfilImage}
-						/>
-					</div>
-					<div>
-						<Image
-							src="/assets/logosAbout/reactLogo.svg"
-							width={technologyImageWidth}
-							height={technologyImageHeight}
-							alt="Profile Image"
-							className={styles.perfilImage}
-						/>
-					</div>
-					<div>
-						<Image
-							src="/assets/logosAbout/vueLogo.svg"
-							width={technologyImageWidth}
-							height={technologyImageHeight}
-							alt="Profile Image"
-							className={styles.perfilImage}
-						/>
-					</div>
-					<div>
-						<Image
-							src="/assets/logosAbout/mongodbLogo.svg"
 							width={technologyImageWidth}
 							height={technologyImageHeight}
 							alt="Profile Image"
@@ -116,7 +88,25 @@ export default function About(props) {
 					</div>
 					<div>
 						<Image
-							src="/assets/logosAbout/phpLogo.svg"
+							src="/assets/logosAbout/nodejsLogo.svg"
+							width={technologyImageWidth}
+							height={technologyImageHeight}
+							alt="Profile Image"
+							className={styles.perfilImage}
+						/>
+					</div>
+					<div>
+						<Image
+							src="/assets/logosAbout/expressLogo.svg"
+							width={technologyImageWidth}
+							height={technologyImageHeight}
+							alt="Profile Image"
+							className={styles.perfilImage}
+						/>
+					</div>
+					<div>
+						<Image
+							src="/assets/logosAbout/reactLogo.svg"
 							width={technologyImageWidth}
 							height={technologyImageHeight}
 							alt="Profile Image"
@@ -126,9 +116,47 @@ export default function About(props) {
 
 					<div>
 						<Image
-							src="/assets/logosAbout/csharpLogo.png"
-							width={50}
-							height={50}
+							src="/assets/logosAbout/vueLogo.svg"
+							width={technologyImageWidth}
+							height={technologyImageHeight}
+							alt="Profile Image"
+							className={styles.perfilImage}
+						/>
+					</div>
+
+					<div>
+						<Image
+							src="/assets/logosAbout/mongodbLogo.svg"
+							width={technologyImageWidth}
+							height={technologyImageHeight}
+							alt="Profile Image"
+							className={styles.perfilImage}
+						/>
+					</div>
+
+					<div>
+						<Image
+							src="/assets/logosAbout/phpLogo.svg"
+							width={technologyImageWidth}
+							height={technologyImageHeight}
+							alt="Profile Image"
+							className={styles.perfilImage}
+						/>
+					</div>
+					<div>
+						<Image
+							src="/assets/logosAbout/electronjsLogo.svg"
+							width={technologyImageWidth}
+							height={technologyImageHeight}
+							alt="Profile Image"
+							className={styles.perfilImage}
+						/>
+					</div>
+					<div>
+						<Image
+							src="/assets/logosAbout/csharpLogo.svg"
+							width={technologyImageWidth}
+							height={technologyImageHeight}
 							alt="Profile Image"
 							className={styles.perfilImage}
 						/>

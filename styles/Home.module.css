@@ -1,83 +1,54 @@
-.container {
-	width: 100%;
-	height: 100%;
-	background-color: orangered;
-}
-
-.header {
+.section,
+.section2,
+.section3 {
 	display: grid;
-	grid-template-columns: auto max-content;
-	grid-column: 1/-1;
+	text-align: center;
+	align-self: center;
+	padding: 1rem;
+	min-height: 100%;
+	height: max-content;
 }
 
-.navigationBar {
-	display: grid;
-	grid-template-columns: repeat(4, max-content);
-	align-items: center;
-	text-align: right;
-	height: 100%;
-}
-
-.navigationLink {
-	padding: 0.6rem;
-	color: #fff;
-}
-.navigationLink:hover {
-	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.4);
-	color: antiquewhite;
-}
-.active {
-	color: black;
+.section div > * {
+	margin: 0;
+	padding: 0 auto;
 }
 
 .section {
-	min-height: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	text-align: center;
-	color: white;
 	background-color: orangered;
-	grid-template-rows: max-content;
+	color: white;
+	grid-template-rows: max-content auto auto;
+}
+
+.section div,
+.section2 div,
+.section3 div {
+	align-self: center;
 }
 
 .section2 {
-	min-height: 100%;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	text-align: center;
 	color: orangered;
-	background-color: white;
+	grid-template-columns: auto;
 }
 
 .section3 {
-	min-height: 100%;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	text-align: center;
-	color: white;
 	background-color: orangered;
-}
-.imageProfile {
-	margin: 0;
-	padding: 0;
+	color: white;
+	grid-template-rows: auto auto;
 }
 
-.titleSection {
-	font-size: 2rem;
-}
-
-.fullSpaceGrid {
+.gridFullColumn {
 	grid-column: 1/-1;
 }
 
-@media (max-width: 800px) {
-	.section,
+@media (min-width: 600px) {
+	.section {
+		grid-template-rows: max-content auto;
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.section2,
 	.section3 {
-		grid-template-columns: auto;
+		grid-template-columns: repeat(2, 1fr);
 	}
 }

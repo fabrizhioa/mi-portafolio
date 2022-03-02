@@ -6,18 +6,13 @@ import Header from "./components/header";
 
 export default function Home() {
 	return (
-		<div className={styles.container}>
+		<div className="contenedor">
 			<section className={styles.section}>
 				<Header title="Inicio" />
 				<div>
-					<Image
-						src="/assets/perfilImage.png"
-						alt="Imagen de perfil"
-						width={150}
-						height={150}
-					/>
 					<h1 className={styles.titleSection}>Fabrizhio Al chariti</h1>
-
+					<h4>Desarrollador web, movil y de escritorio</h4>
+					<br />
 					<cite>
 						&quot;El mundo esta cambiando y yo quiero ser parte de ese cambio.
 						<br />
@@ -34,7 +29,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className={styles.section2}>
-				<div className={styles.fullSpaceGrid}>
+				<div className={styles.gridFullColumn}>
 					<h1>Actitudes</h1>
 				</div>
 				<div>
